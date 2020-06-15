@@ -52,6 +52,9 @@ function App() {
 
   return (
     <div className="App">
+      
+      
+      
       <header>
         <h1>Movie Search</h1>
       </header>
@@ -60,7 +63,8 @@ function App() {
         <Results results = {state.results} openPopup = {openPopup}c/>
         {(typeof state.selected.Title != "undefined") ? <Popup selected={state.selected} closePopup={closePopup} /> : false }
       </main>
-    </div>
+      </div>
+
   );
 }
 
